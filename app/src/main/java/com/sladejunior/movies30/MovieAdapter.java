@@ -50,7 +50,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
 
     @Override
     public void onBindViewHolder(@NonNull MovieViewHolder holder, int position) {
-        if(position==movies.size()-4 && onReachEndListener!=null){
+        if(position==getItemCount()-2 && onReachEndListener!=null){
             onReachEndListener.onReachEnd();
         }
 

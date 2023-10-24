@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void downloadData(int methodOfSort, int page){
+    public void downloadData(int methodOfSort, int page){
         JSONObject jsonObject = NetworkUtils.getJSONFromNetwork(methodOfSort,1);
         ArrayList<Movie> movies = JSONUtils.getMoviesFromJSON(jsonObject);
         if(movies != null && !movies.isEmpty()){
